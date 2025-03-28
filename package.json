@@ -10,13 +10,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "engines": {
     "node": ">=20.0.0"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.20",
-    "@vuepress/plugin-copy-code": "2.0.0-rc.20",
     "@vuepress/theme-default": "2.0.0-rc.88",
     "sass-embedded": "^1.86.0",
     "vue": "^3.3.0",
