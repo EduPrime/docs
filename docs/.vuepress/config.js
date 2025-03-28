@@ -4,8 +4,8 @@ import { defineUserConfig } from 'vuepress'
 
 
 export default defineUserConfig({
-    title: 'EduPrime.chat',
-    description: 'Mais tempo para o professor',
+  title: 'EduPrime.chat',
+  description: 'Mais tempo para o professor',
   bundler: viteBundler(),
   theme: defaultTheme(),
 })
