@@ -5,6 +5,9 @@
     "docs:preview": "vitepress preview vitepress"
   },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.4"
+    "vitepress": "^2.0.0-alpha.4",
+    "@antfu/eslint-config": "^4.11.0",
+    "eslint": "^9.23.0",
+    "vuejs": "latest"
   }
 }

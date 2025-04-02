@@ -10,8 +10,8 @@ Esta página demonstra as funcionalidades avançadas do EduPrime para professore
 
 Registrar avaliações numéricas no EduPrime é um processo simples e eficiente que permite acompanhar o desempenho dos alunos de forma organizada.
 
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+import { ref, computed } from 'vue'
 const notaAluno = ref(7.5)
 const statusAprovacao = computed(() => {
   return notaAluno.value >= 6 ? 'Aprovado' : 'Recuperação'
