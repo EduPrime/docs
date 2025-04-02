@@ -2,7 +2,7 @@
 
 Esta página demonstra os principais guias do EduPrime, a ferramenta essencial para professores que desejam gerenciar suas aulas de forma digital e eficiente.
 
-## Acessando o EduPrime
+## Acessando o EduPrime (vídeo teste)
 
 Bem-vindo ao guia de acesso ao EduPrime, a ferramenta essencial para professores que desejam gerenciar e organizar informações de suas aulas de forma digital.
 
