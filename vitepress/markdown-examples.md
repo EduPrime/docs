@@ -6,7 +6,7 @@ Esta página demonstra os principais guias do EduPrime, a ferramenta essencial p
 
 Bem-vindo ao guia de acesso ao EduPrime, a ferramenta essencial para professores que desejam gerenciar e organizar informações de suas aulas de forma digital.
 
-**Como acessar**
+**Como acessar** - Andrei Teste
 
 ```md
 1. Abra seu navegador favorito
