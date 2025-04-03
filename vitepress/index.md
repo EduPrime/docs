@@ -35,7 +35,7 @@ features:
   - icon: ✓
     title: Controle de Frequência
     details: Registros personalizados para cada nível de ensino, do Infantil ao Fundamental II
-    link: /api-examples#registro-de-frequência-detalhado
+    link: /controle-de-frequencia
     
   - icon: 📱
     title: Acesso Multiplataforma
