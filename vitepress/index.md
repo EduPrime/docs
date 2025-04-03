@@ -25,7 +25,7 @@ features:
   - icon: 📝
     title: Registro de Conteúdo
     details: Documente suas aulas e vincule automaticamente às habilidades da BNCC
-    link: /markdown-examples#registrando-conteudo
+    link: /registro-de-conteudo
     
   - icon: 📊
     title: Avaliações Numéricas
