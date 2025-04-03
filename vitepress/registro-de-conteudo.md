@@ -1,6 +1,6 @@
 ## Registrando Conteúdo
 
-Nessa parte iremos colocar todas as informaçõees referentes ao registro de conteúdo. Registrar conteúdo no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC.
+Treinamento Andrei e Patricia. Nessa parte iremos colocar todas as informaçõees referentes ao registro de conteúdo. Registrar conteúdo no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC.
 
 **Como registrar conteúdo**
 
