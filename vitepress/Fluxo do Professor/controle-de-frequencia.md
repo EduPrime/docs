@@ -1,6 +1,6 @@
-# LANÇAMENTO DE FREQUENCIA
+# Controle de Frequência
 
-O Lançamento de Frequência no EduPrime é um processo intuitivo que permite ao professor registrar presenças e ausências dos alunos em todas as turmas com apenas alguns cliques.
+O **Controle de Frequência** dos alunos no EduPrime é um processo intuitivo que permite ao professor registrar presenças e ausências dos alunos em todas as turmas com apenas alguns cliques.
 
 ## Ensino Fundamental I
 
@@ -9,7 +9,8 @@ O Lançamento de Frequência no EduPrime é um processo intuitivo que permite ao
 Siga estes passos para realizar o registro de frequência:
 
 1. **Acessar o Diário**
-   - Na tela inicial, clique no ícone **Diário** no menu à esquerda
+   1. Na tela inicial, clique no ícone **Diário** no menu à esquerda
+   2. Clique em **Frequência**
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -19,30 +20,41 @@ Siga estes passos para realizar o registro de frequência:
 
 > ⓘ Após selecionar Escola, Turma e Dia, a lista de alunos será exibida.
 
-Esse alerta indica que o Registro ainda não foi feito.
-
 3. **Registrar presenças/ausências**
-   - **Se todos estiverem presentes**:
+   - **Se todos os alunos estiverem presentes**:
      - Clique no botão **SALVAR**
-     - ✔️ Um alerta confirmará o registro bem-sucedido
+     > ✅ Um alerta confirmará o registro bem-sucedido
 
-   - **Para registrar ausências**:
+   - **Se houver alunos ausentes**:
      1. Expanda o aluno clicando na seta à direita
      2. Clique em **Ausente**
      3. No campo **Justificativa de falta**, selecione a opção adequada
      4. Clique em **OK**
      5. Após registrar todas as ausências, clique em **SALVAR**
-     - ✔️ Um alerta confirmará o registro bem-sucedido
+     > ✅ Um alerta confirmará o registro bem-sucedido
 
 
 ### Como alterar uma frequência registrada
 
 Caso necessite modificar um registro já existente:
 
-1. Expanda o aluno clicando na seta à direita
-2. Faça as alterações necessárias
-3. Clique em **SALVAR**
-   - ✔️ Um alerta confirmará a alteração bem-sucedida
+1. **Acessar o Diário**
+   1. Na tela inicial, clique no ícone **Diário** no menu à esquerda
+   2. Clique em **Frequência**
+
+2. **Selecionar filtros**
+   - No filtro, selecione:
+     1. A **Escola** correspondente
+     2. A **Turma** desejada
+     3. O **Dia** para o qual a frequência será registrada
+
+> ⓘ Após selecionar Escola, Turma e Dia, a lista de alunos será exibida.
+
+3. **Alterar presenças/ausências**
+   1. Expanda o aluno clicando na seta à direita
+   2. Faça as alterações necessárias
+   3. Clique em **SALVAR**
+   > ✅ Um alerta confirmará a alteração bem-sucedida
 
 
 ## Ensino Fundamental II
@@ -52,7 +64,8 @@ Caso necessite modificar um registro já existente:
 Siga estes passos para realizar o registro de frequência:
 
 1. **Acessar o Diário**
-   - Na tela inicial, clique no ícone **Diário** no menu à esquerda
+   1. Na tela inicial, clique no ícone **Diário** no menu à esquerda
+   2. Clique em **Frequência**
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -63,14 +76,12 @@ Siga estes passos para realizar o registro de frequência:
 
 > ⓘ Após selecionar Escola, Turma, Disciplina e Dia, a lista de alunos será exibida.
 
-Esse alerta indica que o Registro ainda não foi feito.
-
 3. **Registrar presenças/ausências**
-   - **Se todos estiverem presentes**:
+   - **Se todos os alunos estiverem presentes**:
      - Clique no botão **SALVAR**
-     - ✔️ Um alerta confirmará o registro bem-sucedido
+     > ✅ Um alerta confirmará o registro bem-sucedido
 
-   - **Para registrar ausências**:
+   - **Se houver alunos ausentes**:
      1. Expanda o aluno clicando na seta à direita
      2. Clique em **Ausente**
      3. Clique no botão à direita
@@ -79,20 +90,35 @@ Esse alerta indica que o Registro ainda não foi feito.
      6. No campo **Justificativa de falta**, selecione a opção adequada
      7. Clique em **OK**
      8. Após registrar todas as ausências, clique em **SALVAR**
-     - ✔️ Um alerta confirmará o registro bem-sucedido
+     - ✅ Um alerta confirmará o registro bem-sucedido
 
 
 ### Como alterar uma frequência registrada
 
 Caso necessite modificar um registro já existente:
 
-1. Expanda o aluno clicando na seta à direita
-2. Faça as alterações necessárias
-3. Clique em **SALVAR**
-   - ✔️ Um alerta confirmará a alteração bem-sucedida
+1. **Acessar o Diário**
+   1. Na tela inicial, clique no ícone **Diário** no menu à esquerda
+   2. Clique em **Frequência**
+
+2. **Selecionar filtros**
+   - No filtro, selecione:
+     1. A **Escola** correspondente
+     2. A **Turma** desejada
+     3. O **Dia** para o qual a frequência será registrada
+
+> ⓘ Após selecionar Escola, Turma e Dia, a lista de alunos será exibida.
+
+3. **Alterar presenças/ausências**
+   1. Expanda o aluno clicando na seta à direita
+   2. Faça as alterações necessárias
+   3. Clique em **SALVAR**
+   > ✅ Um alerta confirmará a alteração bem-sucedida
 
 ## Observações importantes
 
-- O sistema exibe um alerta ⚠️ quando um registro ainda não foi realizado
-- Certifique-se de salvar as alterações antes de sair da tela
-- As justificativas de falta são obrigatórias para alunos ausentes
+⚠️ O alerta amarelo indica que o registro não foi realizado.
+
+⚠️ Certifique-se de salvar as alterações antes de sair da tela.
+
+⚠️ As justificativas e quantidade de faltas são obrigatórias para alunos ausentes.
