@@ -2,6 +2,8 @@
 
 O **Controle de Frequência** dos alunos no EduPrime é um processo intuitivo que permite ao professor registrar presenças e ausências dos alunos em todas as turmas com apenas alguns cliques.
 
+## Ensino Infantil
+
 ## Ensino Fundamental I
 
 ### Como registrar frequência
@@ -26,7 +28,7 @@ Siga estes passos para realizar o registro de frequência:
      > ✅ Um alerta confirmará o registro bem-sucedido
 
    - **Se houver alunos ausentes**:
-     1. Expanda o aluno clicando na seta à direita
+     1. Expanda o aluno ausente clicando na seta à direita
      2. Clique em **Ausente**
      3. No campo **Justificativa de falta**, selecione a opção adequada
      4. Clique em **OK**
@@ -51,7 +53,7 @@ Caso necessite modificar um registro já existente:
 > ⓘ Após selecionar Escola, Turma e Dia, a lista de alunos será exibida.
 
 3. **Alterar presenças/ausências**
-   1. Expanda o aluno clicando na seta à direita
+   1. Expanda o aluno ausente clicando na seta à direita
    2. Faça as alterações necessárias
    3. Clique em **SALVAR**
    > ✅ Um alerta confirmará a alteração bem-sucedida
@@ -82,7 +84,7 @@ Siga estes passos para realizar o registro de frequência:
      > ✅ Um alerta confirmará o registro bem-sucedido
 
    - **Se houver alunos ausentes**:
-     1. Expanda o aluno clicando na seta à direita
+     1. Expanda o aluno ausente clicando na seta à direita
      2. Clique em **Ausente**
      3. Clique no botão à direita
      4. Marque quais aulas o aluno esteve ausente
@@ -110,7 +112,7 @@ Caso necessite modificar um registro já existente:
 > ⓘ Após selecionar Escola, Turma e Dia, a lista de alunos será exibida.
 
 3. **Alterar presenças/ausências**
-   1. Expanda o aluno clicando na seta à direita
+   1. Expanda o aluno ausente clicando na seta à direita
    2. Faça as alterações necessárias
    3. Clique em **SALVAR**
    > ✅ Um alerta confirmará a alteração bem-sucedida

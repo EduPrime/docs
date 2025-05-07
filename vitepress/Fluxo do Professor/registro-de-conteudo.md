@@ -1,6 +1,8 @@
 # Registro de Conteúdo
 
-Registrar conteúdo das aulas no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC.
+**Registrar conteúdo** das aulas no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC.
+
+## Ensino Infantil
 
 ## Ensino Fundamental I
 

@@ -22,21 +22,21 @@ features:
     details: Login rápido e recuperação de senha segura garantindo acesso fácil à plataforma
     link: /markdown-examples#acessando-o-eduprime
   
-  - icon: 📝
-    title: Registro de Conteúdo
-    details: Documente suas aulas e vincule automaticamente às habilidades da BNCC
-    link: /registro-de-conteudo
-    
-  - icon: 📊
-    title: Avaliações Numéricas
-    details: Sistema intuitivo para registro e análise de notas dos alunos
-    link: /api-examples#registro-de-avaliações-numéricas
-    
   - icon: ✓
     title: Controle de Frequência
     details: Registros personalizados para cada nível de ensino, do Infantil ao Fundamental II
-    link: /controle-de-frequencia
-    
+    link: /Fluxo do Professor/controle-de-frequencia
+
+  - icon: 📝
+    title: Registro de Conteúdo
+    details: Documente suas aulas e vincule automaticamente às habilidades da BNCC
+    link: /Fluxo do Professor/registro-de-conteudo
+  
+  - icon: 📊
+    title: Lançamento de Notas
+    details: Sistema intuitivo para registro e análise de notas dos alunos
+    link: /Fluxo do Professor/lancamento-de-notas
+
   - icon: 📱
     title: Acesso Multiplataforma
     details: Use em qualquer dispositivo - computadores, tablets ou smartphones
