@@ -6,7 +6,7 @@ Esta página demonstra os principais guias do EduPrime, a ferramenta essencial p
 
 Bem-vindo ao guia de acesso ao EduPrime, a ferramenta essencial para professores que desejam gerenciar e organizar informações de suas aulas de forma digital.
 
-**Como acessar** - Andrei Teste
+**Como acessar**
 
 ```md
 1. Abra seu navegador favorito
@@ -46,34 +46,6 @@ Nunca compartilhe suas credenciais ou links de recuperação com terceiros.
 3. Verifique sua caixa de entrada (e a pasta de spam)
 4. Clique no link recebido e defina uma nova senha
 :::
-
-## Registrando Conteúdo
-
-Nessa parte iremos colocar todas as informaçõees referentes ao registro de conteúdo. Registrar conteúdo no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC.
-
-**Como registrar conteúdo**
-
-```js{3}
-// Exemplo do fluxo de registro
-function registrarConteudo() {
-  selecionarTurma() // Etapa crucial!
-  definirData()
-  adicionarConteudo()
-  vincularHabilidades()
-  salvar()
-}
-```
-
-## Avaliações Numéricas
-
-Registrar avaliações numéricas no EduPrime permite acompanhar o desempenho dos alunos de forma organizada.
-
-## Registro de Frequência
-
-O EduPrime oferece métodos específicos para registro de frequência em diferentes níveis:
-
-- **Educação Infantil e Fundamental I**: Interface simplificada com foco em visualização
-- **Fundamental II**: Sistema avançado com registro por período/aula
 
 ## Recursos Adicionais
 

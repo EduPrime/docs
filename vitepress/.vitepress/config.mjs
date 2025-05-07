@@ -7,16 +7,17 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Início', link: '/' },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Telas',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Acesso Simplificado', link: '/markdown-examples#acessando-o-eduprime' },
+          { text: 'Controle de Frequência', link: '/Fluxo do Professor/controle-de-frequencia' },
+          { text: 'Registro de Conteúdo', link: '/Fluxo do Professor/registro-de-conteudo' },
+          { text: 'Lançamento de Notas', link: '/Fluxo do Professor/lancamento-de-notas' }
         ]
       }
     ],
