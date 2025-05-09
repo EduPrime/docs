@@ -69,7 +69,7 @@ Caso necessite modificar um registro já existente:
    - No filtro, selecione:
       - A **Escola** correspondente
       - A **Turma** desejada
-      - A **Etapa** para o qual o parecer será excluídp
+      - A **Etapa** para o qual o parecer será excluído
 
 3. **Excluir Parecer**
    1. Expanda o aluno clicando na seta à direita
@@ -187,11 +187,11 @@ Siga estes passos para realizar o registro de Avaliação Numérica:
    3. Clique em **Salvar**
    > ✅ Um alerta confirmará o registro bem-sucedido
 
-> ⓘ Após inserir as notas de pelo menos **três** Atividades e a **2ª Nota**, a Média do aluno será calculada automaticamente e será exibida ao lado do nome do aluno
+> ℹ️ Após inserir as notas de pelo menos **três** Atividades e a **2ª Nota**, a Média do aluno será calculada automaticamente e será exibida ao lado do nome do aluno
 
 4. **Lançamento de Notas**
 
-> ⓘ Para lançar notas da Turma, é necessário que pelo menos um aluno tenha a média calculada
+> ℹ️ Para lançar notas da Turma, é necessário que pelo menos um aluno tenha a média calculada
 
 - Após repetir o processo de registro da avaliação para cada aluno e salvar as notas individualmente:
     1. Clique em **Lançar Notas**
@@ -219,11 +219,11 @@ Caso necessite modificar um registro já existente:
    3. Clique em **Salvar**
    > ✅ Um alerta confirmará a alteração bem-sucedida
 
-> ⓘ Após inserir as notas de pelo menos **três** Atividades e a **2ª Nota**, a Média do aluno será calculada automaticamente e será exibida ao lado do nome do aluno
+> ℹ️ Após inserir as notas de pelo menos **três** Atividades e a **2ª Nota**, a Média do aluno será calculada automaticamente e será exibida ao lado do nome do aluno
 
 4. **Lançamento de Notas**
 
-> ⓘ Para lançar notas da Turma, é necessário que pelo menos um aluno tenha a média calculada
+> ℹ️ Para lançar notas da Turma, é necessário que pelo menos um aluno tenha a média calculada
 
    - Após realizar as alterações desejadas e salvá-las individualmente:
    1. Clique em **Lançar Notas**
@@ -254,7 +254,7 @@ Caso necessite excluir um registro existente:
 
 4. **Lançamento de Notas**
 
-> ⓘ Para lançar notas da Turma, é necessário que pelo menos um aluno tenha a média calculada
+> ℹ️ Para lançar notas da Turma, é necessário que pelo menos um aluno tenha a média calculada
 
    - Após realizar as alterações desejadas e salvá-las individualmente:
    1. Clique em **Lançar Notas**
