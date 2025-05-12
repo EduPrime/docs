@@ -8,20 +8,17 @@ hero:
   image:
     src: /eduprime-logo.png
     alt: EduPrime Logo
-  actions:
-    - theme: brand
-      text: Começar Agora
-      link: /markdown-examples
-    - theme: alt
-      text: Funcionalidades Avançadas
-      link: /api-examples
 
 features:
   - icon: 🔐
     title: Acesso Simplificado
     details: Login rápido e recuperação de senha segura garantindo acesso fácil à plataforma
-    link: /markdown-examples#acessando-o-eduprime
   
+  - icon: 👤
+    title: Pré-Matrícula
+    details: Processo de Pré-Matrícula simples e seguro
+    link: /Fluxo do Responsável/pre-matricula.md
+
   - icon: ✓
     title: Controle de Frequência
     details: Registros personalizados para cada nível de ensino, do Infantil ao Fundamental II
@@ -37,10 +34,6 @@ features:
     details: Sistema intuitivo para registro e análise de notas dos alunos
     link: /Fluxo do Professor/lancamento-de-notas
 
-  - icon: 📱
-    title: Acesso Multiplataforma
-    details: Use em qualquer dispositivo - computadores, tablets ou smartphones
-    
   - icon: 🛠️
     title: Suporte Especializado
     details: Equipe de suporte pronta para auxiliar em qualquer necessidade
