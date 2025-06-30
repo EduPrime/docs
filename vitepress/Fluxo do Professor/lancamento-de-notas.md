@@ -264,3 +264,40 @@ Caso necessite excluir um registro existente:
 ## Observações importantes
 
 ⚠️ Certifique-se de salvar as alterações antes de sair da tela.
+
+## Dúvidas Frequentes
+
+1. Os alunos não estão aparecendo na lista. O que faço?
+  
+   > Alguns motivos podem estar levando à lista de alunos não ser carregada. Algumas soluções possíveis:
+      - A listagem de alunos só é carregada quando **todos** os itens do filtro no começo da página são selecionados: Escola, Turma e Disciplina. Verifique se os 3 estão selecionados e tente novamente.
+      - Atualize a página (F5), preencha os filtros e tente novamente.
+      - Se após tentar as duas soluções anteriores e a listagem não aparecer, entre em contato com a Gestão da Escola.
+
+2. Posso lançar notas parciais (sem preencher todas as atividades)?
+> Sim, mas o sistema só calculará a média quando pelo menos 3 atividades e a 2ª nota estiverem registradas (Fundamental II).
+
+3.  Como corrigir uma nota lançada por engano após o "Lançamento de Notas"?
+> Siga os passos:
+   >- Acesse Avaliação Numérica/Conceitual.
+   >- Altere a nota e salve.
+   >- Clique em "Lançar Notas" novamente para atualizar.
+
+>ℹ️ Após o fechamento da etapa, entre em contato com a coordenação para ajustes.
+
+4. O sistema não calcula a média automaticamente. O que fazer?
+> Verifique:
+   >- Se todas as notas obrigatórias foram inseridas (ex: 3 atividades + 2ª nota no Fundamental II).
+   >- Se os filtros (Etapa/Disciplina) estão corretos.
+   >- Se a nota está dentro do intervalo permitido (ex: 0 a 10).
+
+5. Posso alterar um parecer/nota após o fechamento da etapa?
+> Não. Após o lançamento oficial, apenas a gestão escolar pode fazer ajustes. Entre em contato com a coordenação.
+
+6. O que fazer se o botão "Lançar Notas" não estiver habilitado?
+> Pode ocorrer se:
+   >- Nenhuma nota foi salva individualmente.
+   >- A etapa está fechada.
+   >- O usuário não tem permissão.
+
+📞 Outras dúvidas? Entre em contato: fale@softagon.com.br
