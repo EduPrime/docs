@@ -82,4 +82,4 @@ Siga estes passos para verificar se a Pré-Matrícula foi concluída:
 
     Caso a Escola desejada não esteja na lista, entre em contato com a Secretaria Municipal de Educação do seu Município
 
-📞 Outras dúvidas? Entre em contato: fale@softagon.com.br
+📞 Outras dúvidas? Entre em contato com a Softagon

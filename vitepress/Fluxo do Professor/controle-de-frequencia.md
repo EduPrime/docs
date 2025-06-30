@@ -217,4 +217,4 @@ Caso necessite modificar um registro já existente:
 
    > A frequência pode ser alterada até o fechamento do ano letivo, mas mudanças nos prazos podem ser feitas pela Escola. Entre em contato com sua secretaria para se informar.
 
-📞 Outras dúvidas? Entre em contato: fale@softagon.com.br
+📞 Outras dúvidas? Entre em contato com a Softagon

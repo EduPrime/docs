@@ -228,4 +228,4 @@ Siga estes passos para realizar o registro de conteúdo:
    >- Salvar periodicamente ao editar conteúdos longos.
    >- Usar um rascunho fora do sistema antes do registro.
 
-📞 Outras dúvidas? Entre em contato: fale@softagon.com.br
+📞 Outras dúvidas? Entre em contato com a Softagon
