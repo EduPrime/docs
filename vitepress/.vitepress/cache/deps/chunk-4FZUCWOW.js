@@ -36,7 +36,7 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-LW4I4DCF.js";
+} from "./chunk-HVR2FF6M.js";
 
 // node_modules/@vueuse/shared/index.mjs
 function computedEager(fn, options) {
@@ -50,16 +50,16 @@ function computedEager(fn, options) {
   });
   return readonly(result);
 }
-function computedWithControl(source, fn) {
+function computedWithControl(source, fn, options = {}) {
   let v = void 0;
   let track;
   let trigger;
-  const dirty = shallowRef(true);
+  let dirty = true;
   const update = () => {
-    dirty.value = true;
+    dirty = true;
     trigger();
   };
-  watch(source, update, { flush: "sync" });
+  watch(source, update, { flush: "sync", ...options });
   const get2 = typeof fn === "function" ? fn : fn.get;
   const set2 = typeof fn === "function" ? void 0 : fn.set;
   const result = customRef((_track, _trigger) => {
@@ -67,9 +67,9 @@ function computedWithControl(source, fn) {
     trigger = _trigger;
     return {
       get() {
-        if (dirty.value) {
+        if (dirty) {
           v = get2(v);
-          dirty.value = false;
+          dirty = false;
         }
         track();
         return v;
@@ -79,8 +79,7 @@ function computedWithControl(source, fn) {
       }
     };
   });
-  if (Object.isExtensible(result))
-    result.trigger = update;
+  result.trigger = update;
   return result;
 }
 function tryOnScopeDispose(fn) {
@@ -398,7 +397,7 @@ function debounceFilter(ms, options = {}) {
     if (duration <= 0 || maxDuration !== void 0 && maxDuration <= 0) {
       if (maxTimer) {
         _clearTimeout(maxTimer);
-        maxTimer = null;
+        maxTimer = void 0;
       }
       return Promise.resolve(invoke2());
     }
@@ -409,14 +408,14 @@ function debounceFilter(ms, options = {}) {
         maxTimer = setTimeout(() => {
           if (timer)
             _clearTimeout(timer);
-          maxTimer = null;
+          maxTimer = void 0;
           resolve(lastInvoker());
         }, maxDuration);
       }
       timer = setTimeout(() => {
         if (maxTimer)
           _clearTimeout(maxTimer);
-        maxTimer = null;
+        maxTimer = void 0;
         resolve(invoke2());
       }, duration);
     });
@@ -1248,11 +1247,11 @@ function useTimeoutFn(cb, interval, options = {}) {
     immediateCallback = false
   } = options;
   const isPending = shallowRef(false);
-  let timer = null;
+  let timer;
   function clear() {
     if (timer) {
       clearTimeout(timer);
-      timer = null;
+      timer = void 0;
     }
   }
   function stop() {
@@ -1266,7 +1265,7 @@ function useTimeoutFn(cb, interval, options = {}) {
     isPending.value = true;
     timer = setTimeout(() => {
       isPending.value = false;
-      timer = null;
+      timer = void 0;
       cb(...args);
     }, toValue(interval));
   }
@@ -1422,50 +1421,50 @@ function watchIgnorable(source, cb, options = {}) {
   let ignorePrevAsyncUpdates;
   let stop;
   if (watchOptions.flush === "sync") {
-    const ignore = shallowRef(false);
+    let ignore = false;
     ignorePrevAsyncUpdates = () => {
     };
     ignoreUpdates = (updater) => {
-      ignore.value = true;
+      ignore = true;
       updater();
-      ignore.value = false;
+      ignore = false;
     };
     stop = watch(
       source,
       (...args) => {
-        if (!ignore.value)
+        if (!ignore)
           filteredCb(...args);
       },
       watchOptions
     );
   } else {
     const disposables = [];
-    const ignoreCounter = shallowRef(0);
-    const syncCounter = shallowRef(0);
+    let ignoreCounter = 0;
+    let syncCounter = 0;
     ignorePrevAsyncUpdates = () => {
-      ignoreCounter.value = syncCounter.value;
+      ignoreCounter = syncCounter;
     };
     disposables.push(
       watch(
         source,
         () => {
-          syncCounter.value++;
+          syncCounter++;
         },
         { ...watchOptions, flush: "sync" }
       )
     );
     ignoreUpdates = (updater) => {
-      const syncCounterPrev = syncCounter.value;
+      const syncCounterPrev = syncCounter;
       updater();
-      ignoreCounter.value += syncCounter.value - syncCounterPrev;
+      ignoreCounter += syncCounter - syncCounterPrev;
     };
     disposables.push(
       watch(
         source,
         (...args) => {
-          const ignore = ignoreCounter.value > 0 && ignoreCounter.value === syncCounter.value;
-          ignoreCounter.value = 0;
-          syncCounter.value = 0;
+          const ignore = ignoreCounter > 0 && ignoreCounter === syncCounter;
+          ignoreCounter = 0;
+          syncCounter = 0;
           if (ignore)
             return;
           filteredCb(...args);
@@ -1490,11 +1489,14 @@ function watchImmediate(source, cb, options) {
   );
 }
 function watchOnce(source, cb, options) {
-  const stop = watch(source, (...args) => {
-    nextTick(() => stop());
-    return cb(...args);
-  }, options);
-  return stop;
+  return watch(
+    source,
+    cb,
+    {
+      ...options,
+      once: true
+    }
+  );
 }
 function watchThrottled(source, cb, options = {}) {
   const {
@@ -1582,6 +1584,7 @@ function computedAsync(evaluationCallback, initialState, optionsOrRef) {
   }
   const {
     lazy = false,
+    flush = "pre",
     evaluating = void 0,
     shallow = true,
     onError = noop
@@ -1618,7 +1621,7 @@ function computedAsync(evaluationCallback, initialState, optionsOrRef) {
         evaluating.value = false;
       hasFinished = true;
     }
-  });
+  }, { flush });
   if (lazy) {
     return computed(() => {
       started.value = true;
@@ -1635,10 +1638,10 @@ function computedInject(key, options, defaultSource, treatDefaultAsFactory) {
   if (treatDefaultAsFactory)
     source = inject(key, defaultSource, treatDefaultAsFactory);
   if (typeof options === "function") {
-    return computed((ctx) => options(source, ctx));
+    return computed((oldValue) => options(source, oldValue));
   } else {
     return computed({
-      get: (ctx) => options.get(source, ctx),
+      get: (oldValue) => options.get(source, oldValue),
       set: options.set
     });
   }
@@ -1799,8 +1802,8 @@ function onClickOutside(target, handler, options = {}) {
   if (isIOS && !_iOSWorkaround) {
     _iOSWorkaround = true;
     const listenerOptions = { passive: true };
-    Array.from(window2.document.body.children).forEach((el) => useEventListener(el, "click", noop, listenerOptions));
-    useEventListener(window2.document.documentElement, "click", noop, listenerOptions);
+    Array.from(window2.document.body.children).forEach((el) => el.addEventListener("click", noop, listenerOptions));
+    window2.document.documentElement.addEventListener("click", noop, listenerOptions);
   }
   let shouldListen = true;
   const shouldIgnore = (event) => {
@@ -2608,7 +2611,8 @@ function useAsyncState(promise, initialState, options) {
     isReady,
     isLoading,
     error,
-    execute
+    execute,
+    executeImmediate: (...args) => execute(0, ...args)
   };
   function waitUntilIsLoaded() {
     return new Promise((resolve, reject) => {
@@ -3407,18 +3411,33 @@ function useStorage(key, defaults2, storage, options = {}) {
     { flush, deep, eventFilter }
   );
   watch(keyComputed, () => update(), { flush });
+  let firstMounted = false;
+  const onStorageEvent = (ev) => {
+    if (initOnMounted && !firstMounted) {
+      return;
+    }
+    update(ev);
+  };
+  const onStorageCustomEvent = (ev) => {
+    if (initOnMounted && !firstMounted) {
+      return;
+    }
+    updateFromCustomEvent(ev);
+  };
   if (window2 && listenToStorageChanges) {
-    tryOnMounted(() => {
-      if (storage instanceof Storage)
-        useEventListener(window2, "storage", update, { passive: true });
-      else
-        useEventListener(window2, customStorageEventName, updateFromCustomEvent);
-      if (initOnMounted)
-        update();
-    });
+    if (storage instanceof Storage)
+      useEventListener(window2, "storage", onStorageEvent, { passive: true });
+    else
+      useEventListener(window2, customStorageEventName, onStorageCustomEvent);
   }
-  if (!initOnMounted)
+  if (initOnMounted) {
+    tryOnMounted(() => {
+      firstMounted = true;
+      update();
+    });
+  } else {
     update();
+  }
   function dispatchWriteEvent(oldValue, newValue) {
     if (window2) {
       const payload = {
@@ -3877,7 +3896,8 @@ function useRefHistory(source, options = {}) {
   const {
     deep = false,
     flush = "pre",
-    eventFilter
+    eventFilter,
+    shouldCommit = () => true
   } = options;
   const {
     eventFilter: composedFilter,
@@ -3885,6 +3905,7 @@ function useRefHistory(source, options = {}) {
     resume: resumeTracking,
     isActive: isTracking
   } = pausableFilter(eventFilter);
+  let lastRawValue = source.value;
   const {
     ignoreUpdates,
     ignorePrevAsyncUpdates,
@@ -3898,12 +3919,16 @@ function useRefHistory(source, options = {}) {
     ignorePrevAsyncUpdates();
     ignoreUpdates(() => {
       source2.value = value;
+      lastRawValue = value;
     });
   }
   const manualHistory = useManualRefHistory(source, { ...options, clone: options.clone || deep, setSource });
   const { clear, commit: manualCommit } = manualHistory;
   function commit() {
     ignorePrevAsyncUpdates();
+    if (!shouldCommit(lastRawValue, source.value))
+      return;
+    lastRawValue = source.value;
     manualCommit();
   }
   function resume(commitNow) {
@@ -4094,6 +4119,11 @@ function useDevicesList(options = {}) {
     if (state.value !== "granted") {
       let granted = true;
       try {
+        const allDevices = await navigator2.mediaDevices.enumerateDevices();
+        const hasCamera = allDevices.some((device) => device.kind === "videoinput");
+        const hasMicrophone = allDevices.some((device) => device.kind === "audioinput" || device.kind === "audiooutput");
+        constraints.video = hasCamera ? constraints.video : false;
+        constraints.audio = hasMicrophone ? constraints.audio : false;
         stream = await navigator2.mediaDevices.getUserMedia(constraints);
       } catch (e) {
         stream = null;
@@ -4800,6 +4830,7 @@ function useEventSource(url, events2 = [], options = {}) {
       useEventListener(es, event_name, (e) => {
         event.value = event_name;
         data.value = e.data || null;
+        lastEventId.value = e.lastEventId || null;
       }, { passive: true });
     }
   };
@@ -4958,7 +4989,7 @@ function createFetch(config = {}) {
   return useFactoryFetch;
 }
 function useFetch(url, ...args) {
-  var _a;
+  var _a, _b;
   const supportsAbort = typeof AbortController === "function";
   let fetchOptions = {};
   let options = {
@@ -4983,7 +5014,7 @@ function useFetch(url, ...args) {
       options = { ...options, ...args[1] };
   }
   const {
-    fetch = (_a = defaultWindow) == null ? void 0 : _a.fetch,
+    fetch = (_b = (_a = defaultWindow) == null ? void 0 : _a.fetch) != null ? _b : globalThis == null ? void 0 : globalThis.fetch,
     initialData,
     timeout
   } = options;
@@ -5000,9 +5031,9 @@ function useFetch(url, ...args) {
   const canAbort = computed(() => supportsAbort && isFetching.value);
   let controller;
   let timer;
-  const abort = () => {
+  const abort = (reason) => {
     if (supportsAbort) {
-      controller == null ? void 0 : controller.abort();
+      controller == null ? void 0 : controller.abort(reason);
       controller = new AbortController();
       controller.signal.onabort = () => aborted.value = true;
       fetchOptions = {
@@ -5019,7 +5050,7 @@ function useFetch(url, ...args) {
     timer = useTimeoutFn(abort, timeout, { immediate: false });
   let executeCounter = 0;
   const execute = async (throwOnFailed = false) => {
-    var _a2, _b;
+    var _a2, _b2;
     abort();
     loading(true);
     error.value = null;
@@ -5068,7 +5099,7 @@ function useFetch(url, ...args) {
         ...context.options,
         headers: {
           ...headersToObject(defaultFetchOptions.headers),
-          ...headersToObject((_b = context.options) == null ? void 0 : _b.headers)
+          ...headersToObject((_b2 = context.options) == null ? void 0 : _b2.headers)
         }
       }
     ).then(async (fetchResponse) => {
@@ -5241,43 +5272,56 @@ function useFileDialog(options = {}) {
   const files = ref(prepareInitialFiles(options.initialFiles));
   const { on: onChange, trigger: changeTrigger } = createEventHook();
   const { on: onCancel, trigger: cancelTrigger } = createEventHook();
-  let input;
-  if (document2) {
-    input = document2.createElement("input");
-    input.type = "file";
-    input.onchange = (event) => {
-      const result = event.target;
-      files.value = result.files;
-      changeTrigger(files.value);
-    };
-    input.oncancel = () => {
-      cancelTrigger();
-    };
-  }
+  const inputRef = computed(() => {
+    var _a;
+    const input = (_a = unrefElement(options.input)) != null ? _a : document2 ? document2.createElement("input") : void 0;
+    if (input) {
+      input.type = "file";
+      input.onchange = (event) => {
+        const result = event.target;
+        files.value = result.files;
+        changeTrigger(files.value);
+      };
+      input.oncancel = () => {
+        cancelTrigger();
+      };
+    }
+    return input;
+  });
   const reset = () => {
     files.value = null;
-    if (input && input.value) {
-      input.value = "";
+    if (inputRef.value && inputRef.value.value) {
+      inputRef.value.value = "";
       changeTrigger(null);
     }
   };
-  const open = (localOptions) => {
-    if (!input)
+  const applyOptions = (options2) => {
+    const el = inputRef.value;
+    if (!el)
       return;
-    const _options = {
+    el.multiple = toValue(options2.multiple);
+    el.accept = toValue(options2.accept);
+    el.webkitdirectory = toValue(options2.directory);
+    if (hasOwn(options2, "capture"))
+      el.capture = toValue(options2.capture);
+  };
+  const open = (localOptions) => {
+    const el = inputRef.value;
+    if (!el)
+      return;
+    const mergedOptions = {
       ...DEFAULT_OPTIONS,
       ...options,
       ...localOptions
     };
-    input.multiple = _options.multiple;
-    input.accept = _options.accept;
-    input.webkitdirectory = _options.directory;
-    if (hasOwn(_options, "capture"))
-      input.capture = _options.capture;
-    if (_options.reset)
+    applyOptions(mergedOptions);
+    if (toValue(mergedOptions.reset))
       reset();
-    input.click();
+    el.click();
   };
+  watchEffect(() => {
+    applyOptions(options);
+  });
   return {
     files: readonly(files),
     open,
@@ -5558,6 +5602,7 @@ function useFullscreen(target, options = {}) {
   const listenerOptions = { capture: false, passive: true };
   useEventListener(document2, eventHandlers, handlerCallback, listenerOptions);
   useEventListener(() => unrefElement(targetRef), eventHandlers, handlerCallback, listenerOptions);
+  tryOnMounted(handlerCallback, false);
   if (autoExit)
     tryOnScopeDispose(exit);
   return {
@@ -5771,7 +5816,8 @@ function useIdle(timeout = oneMinute, options = {}) {
           onEvent();
       }, listenerOptions);
     }
-    reset();
+    if (!initialState)
+      reset();
   }
   return {
     idle,
@@ -5848,6 +5894,9 @@ function useScroll(element, options = {}) {
       top: 0,
       bottom: 0
     },
+    observe: _observe = {
+      mutation: false
+    },
     eventListenerOptions = {
       capture: false,
       passive: true
@@ -5858,6 +5907,9 @@ function useScroll(element, options = {}) {
       console.error(e);
     }
   } = options;
+  const observe = typeof _observe === "boolean" ? {
+    mutation: _observe
+  } : _observe;
   const internalX = shallowRef(0);
   const internalY = shallowRef(0);
   const x = computed({
@@ -5980,6 +6032,22 @@ function useScroll(element, options = {}) {
       onError(e);
     }
   });
+  if ((observe == null ? void 0 : observe.mutation) && element != null && element !== window2 && element !== document) {
+    useMutationObserver(
+      element,
+      () => {
+        const _element = toValue(element);
+        if (!_element)
+          return;
+        setArrivedState(_element);
+      },
+      {
+        attributes: true,
+        childList: true,
+        subtree: true
+      }
+    );
+  }
   useEventListener(
     element,
     "scrollend",
@@ -6102,6 +6170,7 @@ function useMagicKeys(options = {}) {
   };
   const refs = useReactive ? reactive(obj) : obj;
   const metaDeps = /* @__PURE__ */ new Set();
+  const shiftDeps = /* @__PURE__ */ new Set();
   const usedKeys = /* @__PURE__ */ new Set();
   function setRefs(key, value) {
     if (key in refs) {
@@ -6130,6 +6199,19 @@ function useMagicKeys(options = {}) {
     for (const key2 of values) {
       usedKeys.add(key2);
       setRefs(key2, value);
+    }
+    if (key === "shift" && !value) {
+      const shiftDepsArray = Array.from(shiftDeps);
+      const shiftIndex = shiftDepsArray.indexOf("shift");
+      shiftDepsArray.forEach((key2, index) => {
+        if (index >= shiftIndex) {
+          current.delete(key2);
+          setRefs(key2, false);
+        }
+      });
+      shiftDeps.clear();
+    } else if (typeof e.getModifierState === "function" && e.getModifierState("Shift") && value) {
+      [...current, ...values].forEach((key2) => shiftDeps.add(key2));
     }
     if (key === "meta" && !value) {
       metaDeps.forEach((key2) => {
@@ -6609,6 +6691,8 @@ function useMouse(options = {}) {
 }
 function useMouseInElement(target, options = {}) {
   const {
+    windowResize = true,
+    windowScroll = true,
     handleOutside = true,
     window: window2 = defaultWindow
   } = options;
@@ -6622,34 +6706,55 @@ function useMouseInElement(target, options = {}) {
   const elementHeight = shallowRef(0);
   const elementWidth = shallowRef(0);
   const isOutside = shallowRef(true);
-  let stop = () => {
-  };
+  function update() {
+    if (!window2)
+      return;
+    const el = unrefElement(targetRef);
+    if (!el || !(el instanceof Element))
+      return;
+    const {
+      left,
+      top,
+      width,
+      height
+    } = el.getBoundingClientRect();
+    elementPositionX.value = left + (type === "page" ? window2.pageXOffset : 0);
+    elementPositionY.value = top + (type === "page" ? window2.pageYOffset : 0);
+    elementHeight.value = height;
+    elementWidth.value = width;
+    const elX = x.value - elementPositionX.value;
+    const elY = y.value - elementPositionY.value;
+    isOutside.value = width === 0 || height === 0 || elX < 0 || elY < 0 || elX > width || elY > height;
+    if (handleOutside || !isOutside.value) {
+      elementX.value = elX;
+      elementY.value = elY;
+    }
+  }
+  const stopFnList = [];
+  function stop() {
+    stopFnList.forEach((fn) => fn());
+    stopFnList.length = 0;
+  }
+  tryOnMounted(() => {
+    update();
+  });
   if (window2) {
-    stop = watch(
+    const {
+      stop: stopResizeObserver
+    } = useResizeObserver(targetRef, update);
+    const {
+      stop: stopMutationObserver
+    } = useMutationObserver(targetRef, update, {
+      attributeFilter: ["style", "class"]
+    });
+    const stopWatch = watch(
       [targetRef, x, y],
-      () => {
-        const el = unrefElement(targetRef);
-        if (!el || !(el instanceof Element))
-          return;
-        const {
-          left,
-          top,
-          width,
-          height
-        } = el.getBoundingClientRect();
-        elementPositionX.value = left + (type === "page" ? window2.pageXOffset : 0);
-        elementPositionY.value = top + (type === "page" ? window2.pageYOffset : 0);
-        elementHeight.value = height;
-        elementWidth.value = width;
-        const elX = x.value - elementPositionX.value;
-        const elY = y.value - elementPositionY.value;
-        isOutside.value = width === 0 || height === 0 || elX < 0 || elY < 0 || elX > width || elY > height;
-        if (handleOutside || !isOutside.value) {
-          elementX.value = elX;
-          elementY.value = elY;
-        }
-      },
-      { immediate: true }
+      update
+    );
+    stopFnList.push(
+      stopResizeObserver,
+      stopMutationObserver,
+      stopWatch
     );
     useEventListener(
       document,
@@ -6657,6 +6762,16 @@ function useMouseInElement(target, options = {}) {
       () => isOutside.value = true,
       { passive: true }
     );
+    if (windowScroll) {
+      stopFnList.push(
+        useEventListener("scroll", update, { capture: true, passive: true })
+      );
+    }
+    if (windowResize) {
+      stopFnList.push(
+        useEventListener("resize", update, { passive: true })
+      );
+    }
   }
   return {
     x,
@@ -6793,11 +6908,12 @@ function useNetwork(options = {}) {
 function useNow(options = {}) {
   const {
     controls: exposeControls = false,
-    interval = "requestAnimationFrame"
+    interval = "requestAnimationFrame",
+    immediate = true
   } = options;
   const now2 = ref(/* @__PURE__ */ new Date());
   const update = () => now2.value = /* @__PURE__ */ new Date();
-  const controls = interval === "requestAnimationFrame" ? useRafFn(update, { immediate: true }) : useIntervalFn(update, interval, { immediate: true });
+  const controls = interval === "requestAnimationFrame" ? useRafFn(update, { immediate }) : useIntervalFn(update, interval, { immediate });
   if (exposeControls) {
     return {
       now: now2,
@@ -7221,7 +7337,7 @@ function usePointerSwipe(target, options = {}) {
   ];
   tryOnMounted(() => {
     var _a, _b, _c, _d, _e, _f, _g, _h;
-    (_b = (_a = targetRef.value) == null ? void 0 : _a.style) == null ? void 0 : _b.setProperty("touch-action", "none");
+    (_b = (_a = targetRef.value) == null ? void 0 : _a.style) == null ? void 0 : _b.setProperty("touch-action", "pan-y");
     if (disableTextSelect) {
       (_d = (_c = targetRef.value) == null ? void 0 : _c.style) == null ? void 0 : _d.setProperty("-webkit-user-select", "none");
       (_f = (_e = targetRef.value) == null ? void 0 : _e.style) == null ? void 0 : _f.setProperty("-ms-user-select", "none");
@@ -7320,7 +7436,7 @@ function useScreenSafeArea() {
     rightCssVar.value = "env(safe-area-inset-right, 0px)";
     bottomCssVar.value = "env(safe-area-inset-bottom, 0px)";
     leftCssVar.value = "env(safe-area-inset-left, 0px)";
-    update();
+    tryOnMounted(update);
     useEventListener("resize", useDebounceFn(update), { passive: true });
   }
   function update() {
@@ -7351,7 +7467,8 @@ function useScriptTag(src, onLoaded = noop, options = {}) {
     noModule,
     defer,
     document: document2 = defaultDocument,
-    attrs = {}
+    attrs = {},
+    nonce = void 0
   } = options;
   const scriptTag = shallowRef(null);
   let _promise = null;
@@ -7380,6 +7497,9 @@ function useScriptTag(src, onLoaded = noop, options = {}) {
         el.noModule = noModule;
       if (referrerPolicy)
         el.referrerPolicy = referrerPolicy;
+      if (nonce) {
+        el.nonce = nonce;
+      }
       Object.entries(attrs).forEach(([name, value]) => el == null ? void 0 : el.setAttribute(name, value));
       shouldAppend = true;
     } else if (el.hasAttribute("data-loaded")) {
@@ -7664,7 +7784,7 @@ function useSpeechSynthesis(text, options = {}) {
     utterance2.voice = toValue(options.voice) || null;
     utterance2.pitch = toValue(pitch);
     utterance2.rate = toValue(rate);
-    utterance2.volume = volume;
+    utterance2.volume = toValue(volume);
     utterance2.onstart = () => {
       isPlaying.value = true;
       status.value = "play";
@@ -7820,7 +7940,8 @@ function useStorageAsync(key, initialValue, storage, options = {}) {
     eventFilter,
     onError = (e) => {
       console.error(e);
-    }
+    },
+    onReady
   } = options;
   const rawInit = toValue(initialValue);
   const type = guessSerializerType(rawInit);
@@ -7859,7 +7980,12 @@ function useStorageAsync(key, initialValue, storage, options = {}) {
       onError(e);
     }
   }
-  read();
+  const promise = new Promise((resolve) => {
+    read().then(() => {
+      onReady == null ? void 0 : onReady(data.value);
+      resolve(data);
+    });
+  });
   if (window2 && listenToStorageChanges)
     useEventListener(window2, "storage", (e) => Promise.resolve().then(() => read(e)), { passive: true });
   if (storage) {
@@ -7882,6 +8008,10 @@ function useStorageAsync(key, initialValue, storage, options = {}) {
       }
     );
   }
+  Object.assign(data, {
+    then: promise.then.bind(promise),
+    catch: promise.catch.bind(promise)
+  });
   return data;
 }
 var _id = 0;
@@ -7902,6 +8032,8 @@ function useStyleTag(css, options = {}) {
     const el = document2.getElementById(id) || document2.createElement("style");
     if (!el.isConnected) {
       el.id = id;
+      if (options.nonce)
+        el.nonce = options.nonce;
       if (options.media)
         el.media = options.media;
       document2.head.appendChild(el);
@@ -8386,6 +8518,9 @@ function toVec(t) {
 }
 function executeTransition(source, from, to, options = {}) {
   var _a, _b;
+  const {
+    window: window2 = defaultWindow
+  } = options;
   const fromVal = toValue(from);
   const toVal = toValue(to);
   const v1 = toVec(fromVal);
@@ -8414,7 +8549,7 @@ function executeTransition(source, from, to, options = {}) {
       else if (typeof source.value === "number")
         source.value = arr[0];
       if (now2 < endAt) {
-        requestAnimationFrame(tick);
+        window2 == null ? void 0 : window2.requestAnimationFrame(tick);
       } else {
         source.value = toVal;
         resolve();
@@ -8468,7 +8603,8 @@ function useUrlSearchParams(mode = "history", options = {}) {
     removeFalsyValues = false,
     write: enableWrite = true,
     writeMode = "replace",
-    window: window2 = defaultWindow
+    window: window2 = defaultWindow,
+    stringify = (params) => params.toString()
   } = options;
   if (!window2)
     return reactive(initialValue);
@@ -8485,7 +8621,7 @@ function useUrlSearchParams(mode = "history", options = {}) {
     }
   }
   function constructQuery(params) {
-    const stringified = params.toString();
+    const stringified = stringify(params);
     if (mode === "history")
       return `${stringified ? `?${stringified}` : ""}${window2.location.hash || ""}`;
     if (mode === "hash-params")
@@ -8842,7 +8978,7 @@ function createGetDistance(itemSize, source) {
   };
 }
 function useWatchForSizes(size, list, containerRef, calculateRange) {
-  watch([size.width, size.height, list, containerRef], () => {
+  watch([size.width, size.height, () => toValue(list), containerRef], () => {
     calculateRange();
   });
 }
@@ -9717,4 +9853,4 @@ export {
   useWindowScroll,
   useWindowSize
 };
-//# sourceMappingURL=chunk-66T3UYFC.js.map
+//# sourceMappingURL=chunk-4FZUCWOW.js.map

@@ -13,12 +13,8 @@ features:
   - icon: 🔐
     title: Acesso Simplificado
     details: Login rápido e recuperação de senha segura garantindo acesso fácil à plataforma
+    link: /Fluxo do Professor/login
   
-  - icon: 👤
-    title: Pré-Matrícula
-    details: Processo de Pré-Matrícula simples e seguro
-    link: /Fluxo do Responsável/pre-matricula.md
-
   - icon: ✓
     title: Controle de Frequência
     details: Registros personalizados para cada nível de ensino, do Infantil ao Fundamental II
@@ -34,8 +30,6 @@ features:
     details: Sistema intuitivo para registro e análise de notas dos alunos
     link: /Fluxo do Professor/lancamento-de-notas
 
-  - icon: 🛠️
-    title: Suporte Especializado
-    details: Equipe de suporte pronta para auxiliar em qualquer necessidade
+
 ---
 

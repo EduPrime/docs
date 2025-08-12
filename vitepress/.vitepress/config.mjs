@@ -12,7 +12,7 @@ export default defineConfig({
       {
         text: 'Tutoriais',
         items: [
-          { text: 'Pré-Matrícula', link: '/Fluxo do Responsável/pre-matricula'},
+          { text: 'Acesso Simplificado', link: '/Fluxo do Professor/login' },
           { text: 'Controle de Frequência', link: '/Fluxo do Professor/controle-de-frequencia' },
           { text: 'Registro de Conteúdo', link: '/Fluxo do Professor/registro-de-conteudo' },
           { text: 'Lançamento de Notas', link: '/Fluxo do Professor/lancamento-de-notas' }
