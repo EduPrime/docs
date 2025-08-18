@@ -9,27 +9,41 @@ Siga estes passos para realizar o registro de frequência:
 1. **Acessar a Frequência**
    1. Na tela inicial, clique em **Frequência** no menu à esquerda
  
+ ![Frequência](/Freq1.png)
+
 2. **Selecionar filtros**
    - No filtro, selecione:
      1. A **Escola** correspondente
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
+
+![Frequência](/Freq-Filtros.png)
+
    > ℹ️ Quando houve apenas uma opção no filtro, o mesmo será preenchido automaticamente
-   - No Calendário, selecione a **Data** para a qual a frequência será registrada
+   - No Calendário, à direita, selecione a **Data** para a qual a frequência será registrada
+
+![Frequência](/Freq-Calendario.png)
+
    > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Registrar presenças/ausências**
    - **Se todos os alunos estiverem presentes**:
-     - Clique no botão **Salvar Frequência** e confime no botão **Salvar Frequência**
+     - No final da tela, clique no botão **Salvar** e confime no botão **Salvar Frequência**
+
+![Frequência](/Freq-Salvar1.png)
+![Frequência](/Freq-Salvar2.png)
+
    > ✅ Um alerta confirmará o registro bem-sucedido
 
    - **Se houver alunos ausentes**:
      1. Expanda o aluno ausente clicando na seta à direita
      2. Clique no botão **Falta**
      3. No campo **Motivo da falta**, selecione a opção adequada
-   > ℹ️ Caso não seja conhecido o motivo da falta, o campo permanece como **Não informado**
      4. Clique nas **Aulas do Dia Perdidas** (quando aplicável)
+
+     ![Frequência](/Freq-Falta.png)
+
      5. Após registrar todas as ausências, clique em **Salvar Frequência** e confime no botão **Salvar Frequência**
 
    > ✅ Um alerta confirmará o registro bem-sucedido
@@ -89,13 +103,13 @@ Caso necessite modificar um registro já existente:
 
    > Dentro da mesma etapa, a frequência pode ser alterada quantas vezes forem ecessárias. Basta seguir todo o processo de escolha de Escola, Turma e Dia, selecionar o aluno para o qual deseja-se fazer a alteração, realizar a alteração e clicar em **Salvar Frequência** e a nova informação substituirá a anterior no sistema.
 
-5. Eu posso salvar a ausência de um aluno sem justificativa?
+5. Eu posso salvar a ausência de um aluno sem motivo?
    
-   > **Sim.** Caso não haja uma justificativa de falta para o aluno no momento do lançamento, deixa o campo Motivo da Falta como **"Não informado"**. Essa informação pode ser alterada posteriormente.
+   > **Sim.** Caso não haja um motivo de falta para o aluno no momento do lançamento, deixa o campo Motivo da Falta como **"Não informado"**. Essa informação pode ser alterada posteriormente.
 
-6. Eu posso alterar a justificativa de ausência de um aluno depois de lançada a frequência?
+6. Eu posso alterar o motivo de ausência de um aluno depois de lançada a frequência?
    
-   > **Sim.** Dentro da mesma etapa, a justificativa pode ser alterada quantas vezes forem necessárias. Basta seguir todo o processo de escolha de Escola, Turma e Dia, selecionar o aluno para o qual deseja-se fazer a alteração, realizar a alteração e clicar em **Salvar Frequência** e a nova informação substituirá a anterior no sistema.
+   > **Sim.** Dentro da mesma etapa, o motivo pode ser alterado quantas vezes forem necessárias. Basta seguir todo o processo de escolha de Escola, Turma e Dia, selecionar o aluno para o qual deseja-se fazer a alteração, realizar a alteração e clicar em **Salvar Frequência** e a nova informação substituirá a anterior no sistema.
 
 7. Eu posso alterar a quantidade de faltas de um aluno depois de lançada a frequência?
 
