@@ -9,5 +9,8 @@
     "eslint": "^9.23.0",
     "vitepress": "^2.0.0-alpha.4",
     "vuejs": "latest"
+  },
+  "dependencies": {
+    "vue": "^3.5.18"
   }
 }
