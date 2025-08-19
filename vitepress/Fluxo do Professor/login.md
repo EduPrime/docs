@@ -55,4 +55,23 @@ Para alterar a sua senha basta seguir os passos:
 
  > ✅ Caso os dados estejam certos, você estará de volta ao EduPrime
 
+ ## Dúvidas Frequentes
+
+ 1. Não recebi o email para redefinição de senha.
+    
+    > Após clicar no botão **Enviar Instruções** um alerta informará que o email de recuperação foi enviado.
+    Caso não tenha encontrado o email, tente:
+    - procurar a pasta de Spam/Lixo Eletrônico do seu email
+    - re-envie o email de recuperação
+
+> ℹ️ Se após essas tentativas, o email de recuperação ainda não tenha sido encontrado, entre em contato com a Coordenação da Escola
+
+2. Posso usar minha conta do Google ou redes sociais para acessar?
+
+    > **Não**, para a maior segurança dos dados, o EduPrime utiliza autenticação própria. É necessário usar exclusivamente o e-mail e senha cadastrados no sistema.
+
+3. Como alterar meu e-mail de acesso?
+
+    > Entre em contato com a secretaria da escola, pois alterações de e-mail devem ser feitas pela gestão do sistema.
+
 📞 Outras dúvidas? Entre em contato com a Softagon
