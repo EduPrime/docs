@@ -6,10 +6,12 @@
 
 ### Como registrar conteúdo
 
-Siga estes passos para realizar o registro de conteúdo:
+Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serão registrados separadamente. Siga estes passos para realizar o registro de conteúdo:
 
 1. **Acessar o Registro de Conteúdo**
    1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+
+![Conteúdo](/con1.png)
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -20,80 +22,25 @@ Siga estes passos para realizar o registro de conteúdo:
    > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será registrado
 
-3. **Registrar conteúdo**
-   1. Clique no botão de adição **+**
-   2. Preencha o **Conteúdo**
-   3. Selecione as **BNCCs** que melhor se adequam ao conteúdo registrado
-   4. Clique em **Salvar**
-   > ✅ Um alerta confirmará a criação bem-sucedida
-
-### Como alterar um conteúdo registrado
-
-  Caso necessite modificar um registro já existente, siga esse passos:
-
-1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
-
-2. **Selecionar filtros**
-   - No filtro, selecione:
-     1. A **Escola** correspondente
-     2. A **Série** desejada
-     3. A **Turma** desejada
-     4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
-   - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será alterado
-
-3. **Fazer alterações**
-    1. Expanda o registro desejado clicando na seta à direita
-    2. Clique em **Editar**
-    3. Faça as alterações necessárias
-    4. Clique em **Salvar**
-    > ✅ Um alerta confirmará a alteração bem-sucedida
-
-### Como apagar um conteúdo registrado
-
-  Caso necessite apagar um registro já existente, siga os passos:
-
-1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Frequência** no menu à esquerda
-
-2. **Selecionar filtros**
-   - No filtro, selecione:
-     1. A **Escola** correspondente
-     2. A **Série** desejada
-     3. A **Turma** desejada
-     4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
-   - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será apagado
-
-3. **Apagar conteúdo**
-    1. Expanda o registro desejado clicando na seta à direita
-    2. Clique em **Apagar**
-    3. Clique em **Sim**
-    > ✅ Um alerta confirmará a exclusão bem-sucedida
-
-## Múltiplas Disciplinas
-
-### Como registrar conteúdo
-
-Siga estes passos para realizar o registro de conteúdo:
-
-1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
-
-2. **Selecionar filtros**
-   - No filtro, selecione:
-     1. A **Escola** correspondente
-     2. A **Série** desejada
-     3. A **Turma** desejada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
-   - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será registrado
+![Conteúdo](/con-calendario.png)
 
 3. **Registrar conteúdo**
    1. Clique no botão de adição **+**
-   2. Selecione as **Disciplinas** para as quais deseja fazer o registro
-   3. Preencha o **Conteúdo**
+
+![Conteúdo](/con-add1.png)
+
+   2. Clique em **Descrição**
+
+![Conteúdo](/con-add2.png)
+
+   3. Preencha o Conteúdo e clique em **Confirmar**
+
+![Conteúdo](/con-add3.png)
+
    4. Selecione as **BNCCs** que melhor se adequam ao conteúdo registrado
+
+![Conteúdo](/con-bncc.png)
+
    5. Clique em **Salvar**
    > ✅ Um alerta confirmará a criação bem-sucedida
 
@@ -102,7 +49,114 @@ Siga estes passos para realizar o registro de conteúdo:
   Caso necessite modificar um registro já existente, siga esse passos:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Frequência** no menu à esquerda
+   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+
+2. **Selecionar filtros**
+   - No filtro, selecione:
+     1. A **Escola** correspondente
+     2. A **Série** desejada
+     3. A **Turma** desejada
+     4. A **Disciplina** adequada
+   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+   - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será alterado
+
+3. **Fazer alterações**
+   1. Clique no Conteúdo registrado para expandir
+
+![Conteúdo](/con-edit1.png)
+
+   2. Clique em **Editar**
+
+![Conteúdo](/con-edit2.png)
+
+   3. Faça as **alterações** necessárias
+   4. Clique em **Confirmar**
+   > ✅ Um alerta confirmará a alteração bem-sucedida
+
+### Como apagar um conteúdo registrado
+
+  Caso necessite apagar um registro já existente, siga os passos:
+
+1. **Acessar o Registro de Conteúdo**
+   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+
+2. **Selecionar filtros**
+   - No filtro, selecione:
+     1. A **Escola** correspondente
+     2. A **Série** desejada
+     3. A **Turma** desejada
+     4. A **Disciplina** adequada
+   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+   - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será apagado
+
+3. **Apagar conteúdo**
+   1. Clique no Conteúdo registrado para expandir
+
+![Conteúdo](/con-edit1.png)
+
+   2. Clique em **Apagar**
+
+![Conteúdo](/con-edit2.png)
+
+   3. Confira se esse é o Conteúdo correto para apagar e clique em **Confirmar**
+
+![Conteúdo](/con-apaga.png)
+
+   > ✅ Um alerta confirmará a exclusão bem-sucedida
+
+## Múltiplas Disciplinas
+
+Caso o professor lecione **todas** as disciplinas da turma, os Conteúdos podem ser registrados em conjunto. Siga estes passos para realizar o registro de conteúdo:
+
+### Como registrar conteúdo
+
+Siga estes passos para realizar o registro de conteúdo:
+
+1. **Acessar o Registro de Conteúdo**
+   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+
+![Conteúdo](/con1.png)
+
+2. **Selecionar filtros**
+   - No filtro, selecione:
+     1. A **Escola** correspondente
+     2. A **Série** desejada
+     3. A **Turma** desejada
+   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+   - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será registrado
+
+![Conteúdo](/con-calendario.png)
+
+3. **Registrar conteúdo**
+   1. Clique no botão de adição **+**
+
+![Conteúdo](/con-add1.png)
+
+   2. Selecione as **Disciplinas** para as quais deseja fazer o registro
+
+![Conteúdo](/con-disciplinas.png)
+
+   3. Clique em **Descrição**
+
+![Conteúdo](/con-add2.png)
+
+   4. Preencha o Conteúdo e clique em **Confirmar**
+
+![Conteúdo](/con-add3.png)
+
+   5. Selecione as **BNCCs** que melhor se adequam ao conteúdo registrado
+
+![Conteúdo](/con-bncc.png)
+
+   6. Clique em **Salvar**
+   > ✅ Um alerta confirmará a criação bem-sucedida
+
+### Como alterar um conteúdo registrado
+
+  Caso necessite modificar um registro já existente, siga esse passos:
+
+1. **Acessar o Registro de Conteúdo**
+   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -113,18 +167,24 @@ Siga estes passos para realizar o registro de conteúdo:
    - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será alterado
 
 3. **Fazer alterações**
-    1. Expanda o registro desejado clicando na seta à direita
-    2. Clique em **Editar**
-    3. Faça as alterações necessárias
-    4. Clique em **Salvar**
-    > ✅ Um alerta confirmará a alteração bem-sucedida
+   1. Clique no Conteúdo registrado para expandir
+
+![Conteúdo](/con-edit1.png)
+
+   2. Clique em **Editar**
+
+![Conteúdo](/con-edit2.png)
+
+   3. Faça as **alterações** necessárias
+   4. Clique em **Confirmar**
+   > ✅ Um alerta confirmará a alteração bem-sucedida
 
 ### Como apagar um conteúdo registrado
 
   Caso necessite apagar um registro já existente, siga os passos:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Frequência** no menu à esquerda
+   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -135,14 +195,23 @@ Siga estes passos para realizar o registro de conteúdo:
    - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será apagado
 
 3. **Apagar conteúdo**
-    1. Expanda o registro desejado clicando na seta à direita
-    2. Clique em **Apagar**
-    3. Clique em **Sim**
-    > ✅ Um alerta confirmará a exclusão bem-sucedida
+   1. Clique no Conteúdo registrado para expandir
+
+![Conteúdo](/con-edit1.png)
+
+   2. Clique em **Apagar**
+
+![Conteúdo](/con-edit2.png)
+
+   3. Confira se esse é o Conteúdo correto para apagar e clique em **Confirmar**
+
+![Conteúdo](/con-apaga.png)
+
+   > ✅ Um alerta confirmará a exclusão bem-sucedida
 
 ## Observações importantes
 
-⚠⚠️ Certifique-se de **salvar** as alterações antes de sair da tela.
+⚠️ Certifique-se de **salvar** as alterações antes de sair da tela.
 
 ## Dúvidas Frequentes
 
