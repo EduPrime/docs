@@ -20,12 +20,12 @@ Siga estes passos para realizar o registro de Parecer Descritivo:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
 
 ![Avaliação](/aval-filtros.png)
 
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Registrar Parecer**
    1. Clique para expandir os detalhes do aluno
@@ -47,7 +47,7 @@ Siga estes passos para realizar o registro de Parecer Descritivo:
 
 > ℹ️ A cor laranja no aluno indica que o registro da avaliação está em andamento e ainda não foi salvo.   
    6. Confira se todos os dados estão corretos e clique em **Confirmar**
-   > ✅ Um alerta confirmará o registro bem-sucedido
+> ✅ Um alerta confirmará o registro bem-sucedido
 
 4. **Lançamento de Notas**
    - Após repetir o processo de registro do parecer para cada aluno e salvar as notas individualmente:
@@ -59,7 +59,7 @@ Siga estes passos para realizar o registro de Parecer Descritivo:
 
 ![Avaliação](/aval-parecer6.png)
 
-   > ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
+> ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
 
 ### Como alterar um **Parecer registrado**
 
@@ -74,9 +74,9 @@ Caso necessite modificar um registro já existente:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Alterar Parecer**
    1. Clique para expandir os detalhes do aluno
@@ -89,13 +89,13 @@ Caso necessite modificar um registro já existente:
    5. Confira se todos os dados estão corretos e clique em **Salvar**
 > ℹ️ A cor laranja no aluno indica que o registro da avaliação está em andamento e ainda não foi salvo.  
    6. Confira se todos os dados estão corretos e clique em **Confirmar**
-   > ✅ Um alerta confirmará o registro bem-sucedido
+> ✅ Um alerta confirmará o registro bem-sucedido
 
 4. **Lançamento de Notas**
     - Após realizar as alterações do parecer para cada aluno e salvar individualmente:
     1. Clique em **Lançar Parecer**
     2. Confira se todos os dados estão corretos e clique em **Confirmar**
-    > ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
+> ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
 
 ### Como apagar um **Parecer registrado**
 
@@ -110,9 +110,9 @@ Caso necessite modificar um registro já existente:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Apagar Parecer**
    1. Clique para expandir os detalhes do aluno
@@ -121,13 +121,13 @@ Caso necessite modificar um registro já existente:
 ![Avaliação](/aval-parecer8.png)
 
    3. Confira se os dados a serem apagados estão corretos e confirme a exclusão clicando em **Limpar Tudo**
-   > ✅ Um alerta confirmará a exclusão bem-sucedida
+> ✅ Um alerta confirmará a exclusão bem-sucedida
 
 4. **Lançamento de Notas**
     - Após realizar as alterações do parecer para cada aluno e salvar individualmente:
     1. Clique em **Lançar Parecer**
     2. Confira se todos os dados estão corretos e clique em **Confirmar**
-    > ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
+> ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
 
 ## Avaliação Conceitural
 
@@ -146,12 +146,12 @@ Siga estes passos para realizar o registro de Avaliação Conceitual:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
 
 ![Avaliação](/aval-filtros.png)
 
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Registrar Avaliação**
    1. Expanda o aluno clicando na seta à direita
@@ -165,7 +165,7 @@ Siga estes passos para realizar o registro de Avaliação Conceitual:
 
 > ℹ️ A cor laranja no aluno indica que o registro da avaliação está em andamento e ainda não foi salvo. 
    4. Confira se todos os dados estão corretos e clique em **Confirmar**
-   > ✅ Um alerta confirmará o registro bem-sucedido
+> ✅ Um alerta confirmará o registro bem-sucedido
 
 4. **Lançamento de Notas**
     - Após repetir o processo de registro do parecer para cada aluno e salvar as notas individualmente:
@@ -177,7 +177,7 @@ Siga estes passos para realizar o registro de Avaliação Conceitual:
 
 ![Avaliação](/aval-conceitual5.png)
 
-   > ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
+> ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
 
 ### Como alterar uma **Avaliação registrada**
 
@@ -192,9 +192,9 @@ Caso necessite modificar um registro já existente:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Alterar Avaliação**
    1. Clique para expandir os detalhes do aluno
@@ -204,13 +204,13 @@ Caso necessite modificar um registro já existente:
 ![Avaliação](/aval-conceitual2.png)
 
    4. Confira se todos os dados estão corretos e clique em **Confirmar**
-   > ✅ Um alerta confirmará a alteração bem-sucedida
+> ✅ Um alerta confirmará a alteração bem-sucedida
 
 4. **Lançamento de Notas**
     - Após realizar as alterações do parecer para cada aluno e salvar individualmente:
     1. Clique em **Lançar Notas**
     2. Confira se todos os dados estão corretos e clique em **Confirmar**
-    > ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
+> ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
 
 ### Como excluir uma **Avaliação registrada**
 
@@ -225,9 +225,9 @@ Caso necessite excluir um registro existente:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Excluir Avaliação**
    1. Clique para expandir os detalhes do aluno
@@ -236,13 +236,13 @@ Caso necessite excluir um registro existente:
 ![Avaliação](/aval-conceitual3.png)
 
    3. Confira se os dados a serem apagados estão corretos e confirme a exclusão clicando em **Limpar Tudo**
-   > ✅ Um alerta confirmará a exclusão bem-sucedida
+> ✅ Um alerta confirmará a exclusão bem-sucedida
 
 4. **Lançamento de Notas**
    - Após realizar as alterações desejadas e salvá-las individualmente:
    1. Clique em **Lançar Notas**
    2. Clique em **Sim** para confirmar lançamento
-   > ✅ Um alerta confirmará o lançamento de avaliação bem-sucedida
+> ✅ Um alerta confirmará o lançamento de avaliação bem-sucedida
 
 ## Avaliação Numérica
 
@@ -261,12 +261,12 @@ Siga estes passos para realizar o registro de Avaliação Numérica:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
 
 ![Avaliação](/aval-filtros.png)
 
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Registrar Avaliação**
    1. Clique para expandir os detalhes do aluno
@@ -280,7 +280,7 @@ Siga estes passos para realizar o registro de Avaliação Numérica:
 
 > ℹ️ A cor laranja no aluno indica que o registro da avaliação está em andamento e ainda não foi salvo. 
    4. Confira se todos os dados estão corretos e clique em **Confirmar**
-   > ✅ Um alerta confirmará o registro bem-sucedido
+> ✅ Um alerta confirmará o registro bem-sucedido
 
 > ℹ️ Após inserir as notas das Atividades e da Prova, a **Média do aluno** será calculada automaticamente e será exibida ao lado do nome do aluno
 
@@ -297,7 +297,7 @@ Siga estes passos para realizar o registro de Avaliação Numérica:
 
 ![Avaliação](/aval-numerica5.png)
 
-   > ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
+> ✅ Um alerta confirmará o lançamento de parecer bem-sucedido
 
 ### Como alterar uma **Avaliação registrada**
 
@@ -312,9 +312,9 @@ Caso necessite modificar um registro já existente:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Alterar Avaliação**
    1. Clique para expandir os detalhes do aluno
@@ -325,7 +325,7 @@ Caso necessite modificar um registro já existente:
 
 > ℹ️ A cor laranja no aluno indica que o registro da avaliação está em andamento e ainda não foi salvo. 
    4. Confira se todos os dados estão corretos e clique em **Confirmar**
-   > ✅ Um alerta confirmará a alteração bem-sucedida
+> ✅ Um alerta confirmará a alteração bem-sucedida
 
 > ℹ️ Após inserir as notas das Atividades e da Prova, a **Média do aluno** será calculada automaticamente e será exibida ao lado do nome do aluno
 
@@ -336,7 +336,7 @@ Caso necessite modificar um registro já existente:
    - Após realizar as alterações desejadas e salvá-las individualmente:
    1. Clique em **Lançar Notas**
    2. Clique em **Sim** para confirmar lançamento
-   > ✅ Um alerta confirmará o lançamento de avaliação bem-sucedida
+> ✅ Um alerta confirmará o lançamento de avaliação bem-sucedida
 
 ### Como excluir uma **Avaliação registrada**
 
@@ -351,9 +351,9 @@ Caso necessite excluir um registro existente:
      2. A **Série** desejada
      3. A **Turma** desejada
      4. A **Disciplina** adequada
-   > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
+> ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Menu, à direita, selecione a **Etapa** para a qual a avaliação será registrada
-   > ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
+> ℹ️ Após selecionar Escola, Série, Turma, Disciplina e Dia a lista de alunos será exibida.
 
 3. **Excluir Avaliação**
    1. Clique para expandir os detalhes do aluno
@@ -362,7 +362,7 @@ Caso necessite excluir um registro existente:
 ![Avaliação](/aval-numerica3.png)
 
    3. Confira se os dados a serem apagados estão corretos e confirme a exclusão clicando em **Limpar Tudo**
-   > ✅ Um alerta confirmará a exclusão bem-sucedida
+> ✅ Um alerta confirmará a exclusão bem-sucedida
 
 > ℹ️ Após inserir as notas das Atividades e da Prova, a **Média do aluno** será calculada automaticamente e será exibida ao lado do nome do aluno
 
@@ -373,7 +373,7 @@ Caso necessite excluir um registro existente:
    - Após realizar as alterações desejadas e salvá-las individualmente:
    1. Clique em **Lançar Notas**
    2. Clique em **Sim** para confirmar lançamento
-   > ✅ Um alerta confirmará o lançamento de avaliação bem-sucedida
+> ✅ Um alerta confirmará o lançamento de avaliação bem-sucedida
 
 ## Observações importantes
 
