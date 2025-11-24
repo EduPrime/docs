@@ -11,11 +11,11 @@ hero:
 
 features:
   - icon: 🔐
-    title: Acesso Simplificado
+    title: Acesso Professor
     details: Login rápido e recuperação de senha segura garantindo acesso fácil à plataforma
     link: /Fluxo do Professor/login
   
-  - icon: ✓
+  - icon: ✔️
     title: Controle de Frequência
     details: Registros personalizados para cada nível de ensino, do Infantil ao Fundamental II
     link: /Fluxo do Professor/controle-de-frequencia
@@ -30,6 +30,23 @@ features:
     details: Sistema intuitivo para registro e análise de notas dos alunos
     link: /Fluxo do Professor/lancamento-de-notas
 
+  - icon: 🔐
+    title: Acesso Gestor
+    details: Login rápido e recuperação de senha segura garantindo acesso fácil à plataforma
+    link: /Fluxo do Gestor/login-gestor
 
+  - icon: 📋
+    title: Importador Censo
+    details: Ferramenta para importação e gestão de dados do censo escolar
+    link: /Fluxo do Gestor/importa-censo    
+
+  - icon: 📈
+    title: Emissão de Relatórios
+    details: Geração de relatórios completos de Frequência e Conteúdo
+    link: /Fluxo do Gestor/emissao-relatorio
+    
+  - icon: 👥
+    title: Cadastros
+    details: Sistema completo para cadastro de usuários, turmas e disciplinas
+    link: /Fluxo do Gestor/cadastros        
 ---
-

@@ -25,7 +25,7 @@ Para acessar a sua conta basta seguir os passos:
 
  > ✅ Caso os dados estejam certos, você já pode começar a usar o EduPrime
 
-## Esqueceu sua senha?
+## Esqueceu a senha?
 
 Caso você tenha esquecido a senha cadastrada ou deseja trocá-la, o processo é muito simples.
 Para alterar a sua senha basta seguir os passos:
@@ -74,4 +74,4 @@ Para alterar a sua senha basta seguir os passos:
 
     > Entre em contato com a secretaria da escola, pois alterações de e-mail devem ser feitas pela gestão do sistema.
 
-📞 Outras dúvidas? Entre em contato com a Softagon
+💻 Outras dúvidas? Entre em contato com a Softagon

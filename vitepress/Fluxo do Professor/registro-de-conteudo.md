@@ -1,15 +1,15 @@
 # Registro de Conteúdo
 
-**Registrar conteúdo** das aulas no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC.
+**Registrar Conteúdo** das aulas no EduPrime é um processo simples e eficiente que permite documentar suas aulas e associá-las às habilidades da BNCC (Base Nacional Comum Curricular).
 
 ## Disciplina Única
 
-### Como registrar conteúdo
+### Como Registrar Conteúdo
 
-Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serão registrados separadamente. Siga estes passos para realizar o registro de conteúdo:
+Caso o professor lecione apenas **uma** Disciplina na Turma, os Conteúdos serão registrados separadamente. Siga estes passos para realizar o registro de Conteúdo:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+   - Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 ![Conteúdo](/con1.png)
 
@@ -24,7 +24,7 @@ Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serã
 
 ![Conteúdo](/con-calendario.png)
 
-3. **Registrar conteúdo**
+3. **Registrar Conteúdo**
    1. Clique no botão de adição **+**
 
 ![Conteúdo](/con-add1.png)
@@ -37,19 +37,19 @@ Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serã
 
 ![Conteúdo](/con-add3.png)
 
-   4. Selecione as **BNCCs** que melhor se adequam ao conteúdo registrado
+   4. Selecione as **BNCCs** que melhor se adequam ao Conteúdo registrado
 
 ![Conteúdo](/con-bncc.png)
 
    5. Clique em **Salvar**
    > ✅ Um alerta confirmará a criação bem-sucedida
 
-### Como alterar um conteúdo registrado
+### Como alterar um Conteúdo registrado
 
   Caso necessite modificar um registro já existente, siga esse passos:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+   - Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -73,12 +73,12 @@ Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serã
    4. Clique em **Confirmar**
    > ✅ Um alerta confirmará a alteração bem-sucedida
 
-### Como apagar um conteúdo registrado
+### Como apagar um Conteúdo registrado
 
   Caso necessite apagar um registro já existente, siga os passos:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+   - Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -89,7 +89,7 @@ Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serã
    > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será apagado
 
-3. **Apagar conteúdo**
+3. **Apagar Conteúdo**
    1. Clique no Conteúdo registrado para expandir
 
 ![Conteúdo](/con-edit1.png)
@@ -106,14 +106,14 @@ Caso o professor lecione apenas **uma** disciplina na turma, os Conteúdos serã
 
 ## Múltiplas Disciplinas
 
-Caso o professor lecione **todas** as disciplinas da turma, os Conteúdos podem ser registrados em conjunto. Siga estes passos para realizar o registro de conteúdo:
+Caso o professor lecione **todas** as Disciplinas da Turma, os Conteúdos podem ser registrados em conjunto. Siga estes passos para realizar o registro de Conteúdo:
 
-### Como registrar conteúdo
+### Como registrar Conteúdo
 
 Siga estes passos para realizar o registro de conteúdo:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+   - Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 ![Conteúdo](/con1.png)
 
@@ -127,7 +127,7 @@ Siga estes passos para realizar o registro de conteúdo:
 
 ![Conteúdo](/con-calendario.png)
 
-3. **Registrar conteúdo**
+3. **Registrar Conteúdo**
    1. Clique no botão de adição **+**
 
 ![Conteúdo](/con-add1.png)
@@ -144,19 +144,19 @@ Siga estes passos para realizar o registro de conteúdo:
 
 ![Conteúdo](/con-add3.png)
 
-   5. Selecione as **BNCCs** que melhor se adequam ao conteúdo registrado
+   5. Selecione as **BNCCs** que melhor se adequam ao Conteúdo registrado
 
 ![Conteúdo](/con-bncc.png)
 
    6. Clique em **Salvar**
    > ✅ Um alerta confirmará a criação bem-sucedida
 
-### Como alterar um conteúdo registrado
+### Como alterar um Conteúdo registrado
 
   Caso necessite modificar um registro já existente, siga esse passos:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+   - Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -179,12 +179,12 @@ Siga estes passos para realizar o registro de conteúdo:
    4. Clique em **Confirmar**
    > ✅ Um alerta confirmará a alteração bem-sucedida
 
-### Como apagar um conteúdo registrado
+### Como apagar um Conteúdo registrado
 
   Caso necessite apagar um registro já existente, siga os passos:
 
 1. **Acessar o Registro de Conteúdo**
-   1. Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
+   - Na tela inicial, clique em **Registro de Conteúdo** no menu à esquerda
 
 2. **Selecionar filtros**
    - No filtro, selecione:
@@ -194,7 +194,7 @@ Siga estes passos para realizar o registro de conteúdo:
    > ℹ️ Quando houver apenas uma opção no filtro, o mesmo será preenchido automaticamente
    - No Calendário, à direita, selecione a **Data** para a qual o Conteúdo será apagado
 
-3. **Apagar conteúdo**
+3. **Apagar Conteúdo**
    1. Clique no Conteúdo registrado para expandir
 
 ![Conteúdo](/con-edit1.png)
@@ -215,36 +215,36 @@ Siga estes passos para realizar o registro de conteúdo:
 
 ## Dúvidas Frequentes
 
-1. Posso registrar conteúdo para dias futuros?
+1. Posso registrar Conteúdo para dias futuros?
 
-> **Sim**. Para facilitar o planejamento do professor, ele pode registrar o conteúdo de aulas futuras dentro da etapa atual.
+> **Sim**. Para facilitar o planejamento do professor, ele pode registrar o Conteúdo de aulas futuras dentro da etapa atual.
 
 2. Quantas habilidades da BNCC posso vincular a um único conteúdo?
 
-> **Não há limite**. Você pode selecionar quantas habilidades forem necessárias para representar adequadamente o conteúdo ministrado.
+> **Não há limite**. Você pode selecionar quantas habilidades forem necessárias para representar adequadamente o Conteúdo ministrado.
 
 3. O que fazer se não encontrar a habilidade da BNCC correta?
 
 > Verifique se:
-   >- A disciplina está correta no filtro.
-   >- O Curso (Infantil, Fundamental I/II) está adequado ao conteúdo.
+   >- A Disciplina está correta no filtro.
+   >- O Curso (Infantil, Fundamental I/II) está adequado ao Conteúdo.
  
 > ℹ️ Caso o problema persista, entre em contato com a coordenação pedagógica para ajustes no sistema.
 
-4. Posso editar/apagar um conteúdo registrado por outro professor?
+4. Posso editar/apagar um Conteúdo registrado por outro professor?
 
-> **Não.** Professores só podem modificar seus próprios registros. Coordenadores e administradores têm permissão para editar conteúdos de toda a turma.
+> **Não.** Professores só podem modificar seus próprios registros. Coordenadores e administradores têm permissão para editar Conteúdos de toda a Turma.
 
-5. Meu conteúdo não aparece após o registro. O que pode ser?
+5. Meu Conteúdo não aparece após o registro. O que pode ser?
 
 > Verifique:
-   >- Se os filtros (escola, série, turma, disciplina e dia) estão corretos.
+   >- Se os filtros (Escola, Série, Turma, Disciplina e dia) estão corretos.
    >- Se o registro foi salvo com sucesso (confira o alerta ✅).
-   >- Atualize a página (F5), preencha os filtros e veja se o conteúdo está sendo exibido
+   >- Atualize a página (F5), preencha os filtros e veja se o Conteúdo está sendo exibido
 
-6. Como saber se um conteúdo já foi registrado para evitar duplicidade?
+6. Como saber se um Conteúdo já foi registrado para evitar duplicidade?
 
-> Sempre consulte a lista de registros antes de adicionar um novo. O sistema não alerta sobre conteúdos repetidos, então recomendamos:
+> Sempre consulte a lista de registros antes de adicionar um novo. O sistema não alerta sobre Conteúdos repetidos, então recomendamos:
    >- Verificar na lista de Conteúdos.
    >- Padronizar títulos (ex: "Aula 1: Fotossíntese – 15/05").
 
@@ -255,15 +255,15 @@ Siga estes passos para realizar o registro de conteúdo:
 8. O que acontece se eu esquecer de salvar antes de sair da tela?
 
 > O sistema não armazena automaticamente. Você precisará reinserir as informações. Recomendamos:
-   >- Salvar periodicamente ao editar conteúdos longos.
+   >- Salvar periodicamente ao editar Conteúdos longos.
    >- Usar um rascunho fora do sistema antes do registro.
 
-9. Como sei se o conteúdo de uma turma já foi registrado em uma determinada data?
+9. Como sei se o Conteúdo de uma Turma já foi registrado em uma determinada data?
 
 > Ao realizar o Registro de Conteúdo, o sistema exibe um alerta de Registro bem sucedido.
 
-Para checar dias anteriores, o sistema apresenta dois **indicadores visuais** para confirmar o lançamento:
-   >- Os dias com lançamento realizados contém um ícone verde (✓) para indicar que o Conteúdo desse dia, para essa turma, já foi registrado;
+> Para checar dias anteriores, o sistema apresenta dois **indicadores visuais** para confirmar o lançamento:
+   >- Os dias com lançamento realizados contém um ícone verde (✓) para indicar que o Conteúdo desse dia, para essa Turma, já foi registrado;
    >- Ao clicar na data desejada no Calendário, ela exibirá uma coloração verde.
 
-📞 Outras dúvidas? Entre em contato com a Softagon
+💻 Outras dúvidas? Entre em contato com a Softagon
